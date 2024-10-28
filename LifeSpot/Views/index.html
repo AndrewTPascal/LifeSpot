@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="./Static/CSS/Index.css" rel="stylesheet" type="text/css">
+    <script src="./Static/JS/Index.js" type="text/javascript">
+        
+    </script>
+
+    <script>
+        //let userData = fUserDate();
+        //sessionLog(userData);
+        
+        //checkAge();
+        handleSession();
+        sessionLog();
+
+        function userInput() { return document.getElementsByTagName('input')[0].value; }
+    </script>
+
 </head>
 <body>
  
@@ -16,7 +31,7 @@
         <main>
             <div class="input-container">
                Поиск:
-                <input type="text" id="input-shine">
+               <input type="text" oninput="filtrVideo()" size=50%>
             </div>
 
             <div class="video-container">
@@ -48,7 +63,7 @@
         <aside>
             <div class="navbar">
                 <p><a href="/">Все трансляции</a></p>
-                <p><a href="/">О проекте</a></p>
+                <p><a href="/about">О проекте</a></p>
             </div>
         </aside>
 
